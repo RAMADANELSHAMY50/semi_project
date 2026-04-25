@@ -1,0 +1,22 @@
+.buttons{
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e50000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #ffffff;
+    padding: 18px 24px;
+
+    i{
+        width: 15px;
+        height: 16px;
+    }
+
+     @media (max-width:1440px) {
+        font-size: 14px;
+        padding: 14px 24px;
+    }
+   
+}
