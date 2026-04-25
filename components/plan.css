@@ -1,0 +1,69 @@
+section {
+  .plan {
+    margin: 150px 161px 135px 161px;
+
+    .head-plan {
+      margin-bottom: 80px;
+    }
+
+    .btn {
+      width: 237px;
+      height: 75px;
+      border: 1px solid #262626;
+
+      button {
+        flex: 1;
+        padding: 14px 24px;
+      }
+      .button {
+        color: #999999;
+        background-color: unset;
+      }
+      .active {
+        background-color: #1f1f1f;
+        color: #fff;
+      }
+    }
+  }
+
+  .cards {
+    gap: 30px;
+    .card {
+      padding: 50px;
+      border: 1px solid #262626;
+      background-color: #1a1a1a;
+
+      button {
+        flex: 1;
+      }
+    }
+  }
+  @media (max-width: 1440px) {
+    .plan {
+      margin: 120px 80px 113px 80px;
+      .head-plan {
+        margin-bottom: 60px;
+      }
+    }
+    .cards {
+      gap: 20px;
+      .card {
+        padding: 40px;
+      }
+    }
+  }
+  @media (max-width: 390px) {
+    .plan {
+      margin: 80px 15px 80px 15px;
+      .head-plan {
+        margin-bottom: 40px;
+      }
+    }
+
+    .cards {
+      .card {
+        padding: 24px;
+      }
+    }
+  }
+}
