@@ -1,48 +1,60 @@
 main {
   .slider-track {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 295.4px;
     gap: 30px;
     overflow-x: scroll;
     scrollbar-width: none;
 
     .genre-card {
-      flex: 0 0 auto;
-      height: 100%;
       background-color: #1a1a1a;
       padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       border: 1px solid #262626;
       border-radius: 12px;
-
+      position: relative;
 
       .genre-grid {
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2px;
-        max-width: 295px;
-        height: 342px;
-
+        gap: 5px;
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
+
+      .genre-name {
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .genre-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent, #1a1a1a);
+      z-index: 0;
     }
   }
-  @media (max-width:390px) {
-    .genre-card{
-      padding: 24px;
+  @media (max-width: 1440px) {
+    .slider-track {
+      grid-auto-columns: 239.8px;
+      .genre-card {
+        padding: 24px;
+      }
     }
   }
-  @media (max-width:390px) {
-
-    .genre-card{
-      padding: 20px !important;
-      .genre-grid{
-        width: 178px;
-        height: 201px !important;
-
-        
+  @media (max-width: 390px) {
+    .slider-track {
+      grid-auto-columns: 178px;
+      .genre-card {
+        padding: 20px !important;
       }
     }
   }
