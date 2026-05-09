@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 h1{
     font-size: 58px;
     font-weight: 700;
@@ -5,7 +11,7 @@ h1{
      @media (max-width:1440px) {
         font-size: 48px;
     }
-    @media (max-width:390px) {
+    @media (max-width:575px) {
         font-size: 28px;
     }
 }
@@ -29,7 +35,7 @@ h2{
      @media (max-width:1440px) {
         font-size: 38px;
     }
-    @media (max-width:390px) {
+    @media (max-width:575px) {
         font-size: 20px;
     }
 }
@@ -42,7 +48,7 @@ h3{
      @media (max-width:1440px) {
         font-size: 20px;
     }
-    @media (max-width:390px) {
+    @media (max-width:575px) {
         font-size: 18px;
     }
 }
@@ -54,7 +60,19 @@ h4{
      @media (max-width:1440px) {
         font-size: 20px;
     }
-    @media (max-width:390px) {
+    @media (max-width:575px) {
         font-size: 18px;
+    }
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    @media (max-width:1440px) {
+        font-size: 18px;
+    }
+    @media (max-width:575px) {
+        font-size: 16px;
     }
 }

@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 header{
 position: relative;
     .navbar{
@@ -33,30 +40,40 @@ position: relative;
         }
     }
 
-    @media (max-width:390px) {
-        .navbar{
-            margin: 0 15px;
-            
-            .links{
-            display: none;
-            position: absolute;
-            top: 120px;
-            left: 20px;
-            background-color: #0f0f0f;
-            
-            a{
-                color: #BFBFBF;
+    @media (max-width:575px) {
 
-                &:hover{
-                    border-radius: 8px;
-                    background-color: #1A1A1A;
-                }
-            }
-            
-        }
-        
-        }
+    .navbar{
+        margin: 0 15px;
     }
+
+    .links {
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+
+        background-color: #0f0e0e98 !important;
+
+        padding: 100px 20px 20px;
+
+        transition: 0.4s;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+        border: none !important;
+    }
+
+    .links.show {
+        right: 0;
+    }
+}
 }
 
 
@@ -103,7 +120,7 @@ position: relative;
     }
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 575px) {
     margin: 80px 15px;
     padding: 50px 30px;
     text-align: center;
@@ -158,7 +175,7 @@ footer {
     }
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 575px) {
     .footerall {
       margin: 0 15px;
     }

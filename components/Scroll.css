@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 main{
     margin: 200px 161px 150px 161px;
     .container2{
@@ -25,7 +31,7 @@ main{
     @media (max-width:1440px) {
         margin: 150px 80px 120px 80px;
     }
-    @media (max-width:390px) {
+    @media (max-width:575px) {
         margin: 100px 15px 50px 15px;
     }
 }

@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #141414;
+}
+
+#border {
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background-color: #1a1a1a;
+}
+section {
+  margin: 100px 161px 0 161px;
+
+  
+  .movie_open {
+    gap: 30px;
+    .Seasons{
+      padding: 40px;
+
+      .Season{
+        padding: 24px 50px;
+        border-radius: 12px;
+        button{
+          background-color: unset;
+        }
+        .Seaason-box{
+          padding: 20px;
+          border-radius: 8px;
+          background-color: #141414;
+          .content{
+            .time{
+              width: fit-content;
+              color:#999999;
+              background-color: #141414 ;
+            }
+          }
+          img{
+            width: 175px; 
+            height: 118px; 
+          }
+        }
+      }
+    }
+    .content_movie {
+      gap: 30px;
+    }
+
+    .head-scroll {
+      margin-bottom: 30px;
+      button {
+        background-color: #141414 !important;
+      }
+    }
+    .img-box {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      }
+    }
+
+    .box-review {
+      .head-box {
+        button {
+          height: 29px;
+        }
+      }
+    }
+
+    .description,
+    .cast,
+    .review {
+      padding: 50px;
+    }
+
+    .review {
+      .head {
+        margin-bottom: 40px;
+
+        button {
+          font-size: 18px;
+          background-color: #141414 !important;
+          padding: 14px 16px;
+        }
+      }
+      .box-review {
+        gap: 20px;
+        .box {
+          padding: 40px;
+        }
+      }
+      .buttons {
+        button {
+          background-color: #141414;
+        }
+        .move-point {
+          gap: 6px;
+          .bg-point {
+            width: 23px;
+            height: 4px;
+          }
+        }
+      }
+    }
+  }
+  .content_left {
+    height: fit-content;
+    padding: 40px;
+
+    .meta-item {
+      .language {
+        p {
+          background-color: #141414 !important;
+        }
+      }
+
+      .rating-box,
+      .profile-sm {
+        background-color: #141414 !important;
+      }
+
+      .profile-sm {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .rating-box {
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1440px) {
+    margin: 0 80px;
+    .movie_open {
+      margin-top: 80px;
+      .description,
+      .cast,
+      .review {
+        padding: 40px;
+      }
+
+      .review {
+        .box-review {
+          .box {
+            padding: 40px;
+          }
+        }
+      }
+      .img-box {
+        gap: 10px;
+      }
+    }
+
+    .content_left {
+      .meta-item {
+        .rating-box {
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  section {
+    margin: 0 15px;
+    .movie_open {
+      margin-top: 60px;
+      .description,
+      .cast,
+      .review {
+        padding: 24px;
+      }
+
+      .Seasons{
+        padding: 16px 20px;
+        
+      }
+
+      
+      .img-box {
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 30px;
+        scrollbar-color: #e50000;
+        img {
+          width: 75px;
+          height: 80px;
+        }
+      }
+      .img-box::-webkit-scrollbar {
+        height: 4px;
+      }
+
+      .img-box::-webkit-scrollbar-track {
+        background: #222;
+        border-radius: 20px;
+      }
+
+      .img-box::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+
+        background: linear-gradient(90deg, #ff0000, #ff4d4d, #ff0000);
+
+        background-size: 100% 50%;
+
+        animation: moveColors 3s linear infinite;
+      }
+
+      /* animation */
+      @keyframes moveColors {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        100% {
+          background-position: 200% 0%;
+        }
+      }
+    }
+
+    .content_left{
+      padding: 24px;
+    }
+  }
+}

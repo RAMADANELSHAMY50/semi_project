@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subscription</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../components/Navbar_Footer_Banner.css">
+        <link rel="stylesheet" href="../components/paragraph_heading.css">
+        <link rel="stylesheet" href="../components/plan.css">
+        <link rel="stylesheet" href="../components/button.css">
+        <link rel="stylesheet" href="../assets/styles/subscription.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar justify-content-between navbar-expand-lg py-4 ">
+                <a href="#">
+                    <img
+                        src="../assets/Logo.png" height="40px"
+                        alt="logo">
+                </a>
+                <button class="d-lg-none d-md-block border-0" type="button">
+                    <i class="bi bi-list fs-1 text-white" id="menu"></i>
+                </button>
+                <div class="links ">
+                    <ul
+                        class="navbar-nav mx-auto mt-3 mt-lg-0 p-1 border border-2 rounded border-secondary">
+                        <li>
+                            <a class="nav-link" href="../pages/Home_page.html"
+                                >Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link"
+                                href="../pages/movies_show.html"
+                                >Movies & Shows</a>
+                        </li>
+                        <li>
+                            <a class="nav-link"
+                                href="../pages/Support.html">Support</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active" href="#"
+                                >Subscriptions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0 d-none d-md-none d-lg-flex gap-lg-2 gap-xl-4 ">
+                    <button
+                        class="bi bi-search nav-icon me-3 me-lg-0 border-0 text-white"></button>
+                    <button
+                        class="bi bi-bell nav-icon border-0 text-white"></button>
+                </div>
+            </nav>
+        </header>
+
+         <!-- section plan -->
+        <section>
+            <div class="plan">
+                <div class="head-plan d-flex justify-content-between flex-column flex-md-row">
+                    <div class="title-plan">
+                        <h2 class="text-white">Choose the plan that's right for
+                            you</h2>
+                        <p>Join StreamVibe and select from our flexible
+                            subscription options tailored to suit your viewing
+                            preferences. Get ready for non-stop
+                            entertainment!</p>
+                    </div>
+                    <div class="btn d-flex gap-2 p-2 bg-black rounded-2 ">
+                        <button
+                            class="active rounded-2 border-0 ">Monthly</button>
+                        <button
+                            class="button border-0 rounded-2 ">Yearly</button>
+                    </div>
+                </div>
+
+                <!-- cards -->
+                <div class="cards d-flex gap-5 flex-column flex-md-row ">
+
+                    <div class="card rounded-2">
+                        <h3 class="text-white mb-3">Basic Plan</h3>
+                        <p class="mb-5">Enjoy an extensive library of movies and
+                            shows, featuring
+                            a range of content, including recently released
+                            titles.</p>
+                        <span
+                            class="mb-5 text-white fs-1 d-flex align-items-end gap-2">$9.99<sub><p>/month</p></sub></span>
+                        <div class="btns d-flex gap-3 ">
+                            <button class="buttons">Start Free Trial</button>
+                            <button class="buttons">Choose Plan</button>
+                        </div>
+                    </div>
+                    <div class="card rounded-2">
+                        <h3 class="text-white mb-3">Basic Plan</h3>
+                        <p class="mb-5">Enjoy an extensive library of movies and
+                            shows, featuring
+                            a range of content, including recently released
+                            titles.</p>
+                        <span
+                            class="mb-5 text-white fs-1 d-flex align-items-end gap-2">$9.99<sub><p>/month</p></sub></span>
+                        <div class=" d-flex gap-3">
+                            <button class="buttons">Start Free Trial</button>
+                            <button class="buttons">Choose Plan</button>
+                        </div>
+                    </div>
+                    <div class="card rounded-2">
+                        <h3 class="text-white mb-3">Basic Plan</h3>
+                        <p class="mb-5">Enjoy an extensive library of movies and
+                            shows, featuring
+                            a range of content, including recently released
+                            titles.</p>
+                        <span
+                            class="mb-5 text-white fs-1 d-flex align-items-end gap-2">$9.99<sub><p>/month</p></sub></span>
+                        <div class=" d-flex gap-3">
+                            <button class="buttons">Start Free Trial</button>
+                            <button class="buttons">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <main>
+            <!-- Compare Section -->
+            <div class="compare-section">
+                <h2 class="page-title mb-3 text-white">Compare our plans and
+                    find the right one
+                    for you</h2>
+                <p class="page-desc mb-5 text-white">StreamVibe offers three
+                    different plans to
+                    fit your needs: Basic, Standard, and Premium. Compare the
+                    features of each plan and choose the right one for you.</p>
+
+                <!-- Desktop Table -->
+                <div class="d-none d-lg-block compare-table-container">
+                    <table class=" w-100">
+                        <thead class>
+                            <tr class="text-white">
+                                <th>Features</th>
+                                <th>Basic</th>
+                                <th>Standard <span
+                                        class="badge-popular text-white">Popular</span></th>
+                                <th>Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-white ">
+                                <td>Price</td>
+                                <td>$9.99/Month</td>
+                                <td>$12.99/Month</td>
+                                <td>$14.99/Month</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>Content</td>
+                                <td>Access to a wide selection of movies and
+                                    shows, including some new releases.</td>
+                                <td>Access to a wider selection of movies and
+                                    shows, including most new releases and
+                                    exclusive content</td>
+                                <td>Access to a widest selection of movies and
+                                    shows, including all new releases and
+                                    Offline Viewing</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>Devices</td>
+                                <td>Watch on one device simultaneously</td>
+                                <td>Watch on Two device simultaneously</td>
+                                <td>Watch on Four device simultaneously</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>Free Trial</td>
+                                <td>7 Days</td>
+                                <td>7 Days</td>
+                                <td>7 Days</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>Cancel Anytime</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>HDR</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>Dolby Atmos</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>Ad - Free</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>Offline Viewing</td>
+                                <td>No</td>
+                                <td>Yes, for select titles.</td>
+                                <td>Yes, for all titles.</td>
+                            </tr>
+                            <tr class="text-white">
+                                <td>Family Sharing</td>
+                                <td>No</td>
+                                <td>Yes, up to 5 family members.</td>
+                                <td>Yes, up to 6 family members.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile Tabs -->
+                <div class="d-lg-none d-block ">
+                    <div class=" mobile ">
+                        <ul
+                            class="button-mobile d-flex justify-content-around p-2 rounded-3">
+                            <li class="list-unstyled"
+                                role="presentation">
+                                <button
+                                    class="px-4 py-3 rounded-1 border-0">Basic</button>
+                            </li>
+                            <li class="list-unstyled">
+                                <button
+                                    class="px-4 py-3 rounded-1 border-0 active">Standard</button>
+                            </li>
+                            <li class="list-unstyled">
+                                <button
+                                    class="px-4 py-3 rounded-1 border-0">Premium</button>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <!-- Basic -->
+                            <div class="d-none content bg-black rounded-3 ">
+                                <div class>
+                                    <div class="title">Price</div>
+                                    <div class="value">$9.99/Month</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Content</div>
+                                    <div class="value">Access to a wide
+                                        selection of movies and shows, including
+                                        some new releases.</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Devices</div>
+                                    <div class="value">Watch on one device
+                                        simultaneously</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Free Trial</div>
+                                    <div class="value">7 Days</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Cancel Anytime</div>
+                                    <div class="value">Yes</div>
+                                </div>
+                                <div class>
+                                    <div class="title">HDR</div>
+                                    <div class="value">No</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Dolby Atmos</div>
+                                    <div class="value">No</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Ad - Free</div>
+                                    <div class="value">No</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Offline Viewing</div>
+                                    <div class="value">No</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Family Sharing</div>
+                                    <div class="value">No</div>
+                                </div>
+                            </div>
+
+                            <!-- Standard -->
+                            <div class="content">
+
+                                <tr>
+                                    <td>ffff</td>
+                                    <td>ffff</td>
+                                </tr>
+                            </div>
+
+                            <!-- Premium -->
+                            <div class=" d-none">
+                                <div class>
+                                    <div class="title">Price</div>
+                                    <div class="value">$14.99/Month</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Content</div>
+                                    <div class="value">Access to a widest
+                                        selection of movies and shows, including
+                                        all new releases and Offline
+                                        Viewing</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Devices</div>
+                                    <div class="value">Watch on Four device
+                                        simultaneously</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Free Trial</div>
+                                    <div class="value">7 Days</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Cancel Anytime</div>
+                                    <div class="value">Yes</div>
+                                </div>
+                                <div class>
+                                    <div class="title">HDR</div>
+                                    <div class="value">Yes</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Dolby Atmos</div>
+                                    <div class="value">Yes</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Ad - Free</div>
+                                    <div class="value">Yes</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Offline Viewing</div>
+                                    <div class="value">Yes, for all
+                                        titles.</div>
+                                </div>
+                                <div class>
+                                    <div class="title">Family Sharing</div>
+                                    <div class="value">Yes, up to 6 family
+                                        members.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- banner -->
+
+        <div
+            class="banner mt-5 mb-5 d-flex flex-column flex-md-row  justify-content-between align-items-center ">
+            <div>
+                <h2 class="text-white mb-4">Start your free trial today!</h2>
+                <p>This is a clear and concise call to action that encourages
+                    users to sign up for a free trial of StreamVibe.</p>
+            </div>
+            <div>
+                <button class="text-white border-0">Start a Free Trial</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerall">
+                <div class="row mb-4">
+                    <div class="col-6 col-md-2 d-flex flex-column">
+                        <h6 class="footer-heading">Home</h6>
+                        <a href="#" class="footer-link">Categories</a>
+                        <a href="#" class="footer-link">Devices</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                    </div>
+                    <div class="col-6 col-md-2 d-flex flex-column">
+                        <h6 class="footer-heading">Movies</h6>
+                        <a href="#" class="footer-link">Genres</a>
+                        <a href="#" class="footer-link">Trending</a>
+                        <a href="#" class="footer-link">New Releases</a>
+                        <a href="#" class="footer-link">Popular</a>
+                    </div>
+                    <div class="col-6 col-md-2 d-flex flex-column">
+                        <h6 class="footer-heading">Shows</h6>
+                        <a href="#" class="footer-link">Genres</a>
+                        <a href="#" class="footer-link">Trending</a>
+                        <a href="#" class="footer-link">New Releases</a>
+                        <a href="#" class="footer-link">Popular</a>
+                    </div>
+                    <div class="col-6 col-md-2 d-flex flex-column">
+                        <h6 class="footer-heading">Support</h6>
+                        <a href="index.html" class="footer-link">Contact Us</a>
+                    </div>
+                    <div class="col-6 col-md-2 d-flex flex-column">
+                        <h6 class="footer-heading">Subscription</h6>
+                        <a href="#" class="footer-link">Plans</a>
+                        <a href="#" class="footer-link">Features</a>
+                    </div>
+                    <div class="col-6 col-md-2 ">
+                        <h6 class="footer-heading">Connect With Us</h6>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="social-icon"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i
+                                    class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="social-icon"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="footer-bottom d-flex flex-column flex-md-row justify-content-between border-top pt-4">
+                    <div id="footer-bottom-left">
+                        @2023 streamvibe, All Rights Reserved
+                    </div>
+                    <div class="footer-bottom-links mt-3 mt-md-0">
+                        <a class="text-decoration-none gap" href="#">Terms of
+                            Use</a>
+                        <a class="text-decoration-none gap" href="#">Privacy
+                            Policy</a>
+                        <a class="text-decoration-none gap" href="#">Cookie
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+            crossorigin="anonymous"></script>
+
+            <script src="../assets/script/script.js"></script>
+    </body>
+</html>

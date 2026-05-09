@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #141414;
+}
+
+main {
+  margin: 119px 161px 0 161px;
+
+  .support_content{
+      img{
+        height: 477px;
+      }
+    }
+  .support_form {
+    form {
+      padding: 50px;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      background-color: #0f0f0f;
+
+      div {
+        label {
+          font-size: 18px;
+          line-height: 150%;
+          font-weight: 600;
+        }
+        input {
+          background-color: #141414;
+          border: 1px solid #262626;
+          border-radius: 8px;
+          padding: 20px;
+        }
+        placeholder {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 150%;
+          color: #999999;
+        }
+      }
+    }
+
+    select {
+      padding: 12px;
+      border: 1px solid #262626;
+      border-radius: 8px;
+      background-color: #141414;
+    }
+
+    textarea {
+      border: 1px solid #262626;
+      background-color: #141414;
+      padding: 20px;
+      height: 163px;
+    }
+
+    .checkbox {
+      color: #999999;
+    }
+
+    .check {
+        appearance: none;
+        background-color: unset;
+        cursor: pointer;
+    }
+    .check:checked {
+    background-color: rgb(0, 81, 255);
+}
+  }
+  @media (max-width:1440px) {
+    margin: 119px 80px 0 80px;
+    .support_content{
+      img{
+        margin-top: 30px;
+        height: 380px;
+      }
+    }
+    .support_form {
+    form {
+      padding: 40px;
+
+      div {
+        label {
+          font-size: 16px;
+        }
+        input {
+          padding: 16px;
+        }
+        placeholder {
+          font-size: 14px;
+        }
+      }
+    }
+
+    select {
+      padding: 8px;
+    }
+
+    textarea {
+      padding: 16px;
+      height: 129px;
+    }
+
+  }
+  @media (max-width:575px) {
+    margin: 60px 15px 0 15px;
+      .support_form {
+    form {
+      padding: 24px;
+
+      
+    }
+
+  
+
+  }
+  }
+}
+}

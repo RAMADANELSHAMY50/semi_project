@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 /* section ask_Question */
 section {
   .ask_Question {
@@ -42,7 +48,7 @@ section {
       margin: 0 80px;
     }
   }
-  @media (max-width:390px) {
+  @media (max-width:575px) {
     .ask_Question{
       margin: 0 15px;
 

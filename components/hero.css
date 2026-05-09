@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 50px 161px 80px 161px;
+    
+  
+  .movie-hero-overlay {
+    background: linear-gradient(
+      to top,
+        #141414 0%,
+        #3a3838bc 30%,
+        #14141434 55%,
+        #2b2a2a4b 75%,
+        #3b38383a 100%
+    );
+
+    
+    .hero-btn-group {
+      gap: 20px;
+      .btn {
+        background-color: #e50914;
+      }
+      .btn-icon {
+        background-color: var(--sv-bg);
+        border: 1px solid var(--sv-border);
+        width: 3rem;
+        height: 3rem;
+        border-radius: 8px;
+        transition: all 0.3s;
+      }
+      .btn-icon:hover {
+        background-color: var(--sv-border);
+        color: white;
+      }
+    }
+  }
+
+
+  @media (max-width:1440px) {
+      margin: 0 80px;
+  
+
+  }
+
+  @media (max-width:575px) {
+    margin: 0 15px;
+    .movie-hero{
+    img{
+     margin: 0 ;
+    
+    height: 460px;
+    
+  }
+  }
+  .movie-hero-overlay {
+    background: linear-gradient(
+      to top,
+        #000000f3 0%,
+        #141414bc 30%,
+        #14141434 55%,
+        #1414144b 75%,
+        #14141400 100%
+    );
+
+    
+    .hero-btn-group {
+      width: 90%;
+ 
+    }
+  }
+
+  }
+}

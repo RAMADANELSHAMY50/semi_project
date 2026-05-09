@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #141414;
+}
+
+section {
+  margin: 70px 161px 180px 161px;
+
+  .hero {
+    margin-bottom: 190px;
+    .carousel {
+      .carousel-control-prev,
+      .carousel-control-next {
+       top: auto;
+        bottom: 20px;
+        transform: none;
+      }
+      .carousel-inner {
+        .movie-hero-overlay {
+          position: relative;
+          .hero-btn-group,
+          p,
+          h1 {
+            position: relative;
+            z-index: 2;
+            gap: 20px;
+            .btn {
+              background-color: #e50914;
+              width: fit-content;
+              margin-bottom: 50px;
+            }
+            .btn-icon {
+              background-color: var(--sv-bg);
+              border: 1px solid var(--sv-border);
+              width: 3rem;
+              height: 3rem;
+              border-radius: 8px;
+              transition: all 0.3s;
+            }
+            .btn-icon:hover {
+              background-color: var(--sv-border);
+              color: white;
+            }
+          }
+        }
+        .movie-hero-overlay::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          background: linear-gradient(
+            to top,
+            #141414f7 0%,
+            #17161621 30%,
+            #14141434 55%,
+            #1414144b 75%,
+            #14141400 100%
+          );
+          z-index: 1;
+        }
+      }
+    }
+
+  }
+
+  
+  @media (max-width: 1440px) {
+      margin: 0 80px;
+  }
+
+
+  @media (max-width: 390px) {
+    margin: 0 15px;
+    .movie-hero {
+      img {
+        margin: 0;
+
+        height: 460px;
+      }
+    }
+    .movie-hero-overlay {
+      .hero-btn-group {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.movies-badge {
+    background-color: #e50914;
+    border-radius: 6px;
+    width: fit-content;
+    position: relative;
+    top: 20px;
+    left: 40px;
+  }
+
+

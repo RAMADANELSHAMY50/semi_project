@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #141414;
 }
@@ -12,12 +19,13 @@ header {
   @media (max-width: 390px) {
     height: 324px;
   }
+
 }
 
 /* section content */
 .content {
   position: relative;
-  top: -80px;
+  top:  -80px;
 }
 
 /* section box device */
@@ -63,7 +71,7 @@ section{
         }
       }
     }
-    @media (max-width: 390px) {
+    @media (max-width: 575px) {
       margin: 0 15px;
       
       

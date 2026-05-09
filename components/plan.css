@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Maname&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 section {
   .plan {
     margin: 150px 161px 135px 161px;
@@ -52,7 +59,7 @@ section {
       }
     }
   }
-  @media (max-width: 390px) {
+  @media (max-width: 575px) {
     .plan {
       margin: 80px 15px 80px 15px;
       .head-plan {
