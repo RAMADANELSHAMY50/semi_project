@@ -39,10 +39,18 @@ section {
       padding: 50px;
       border: 1px solid #262626;
       background-color: #1a1a1a;
-
+      cursor: pointer;
       button {
         flex: 1;
       }
+      button:hover{
+        transition: .6s;
+        transform: scale(.9);
+      }
+    }
+    .card:hover{
+      transition: .5s;
+      transform: translateY(10px);
     }
   }
   @media (max-width: 1440px) {

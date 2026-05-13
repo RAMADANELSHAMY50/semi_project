@@ -35,9 +35,11 @@ main {
       background-color: #1a1a1a;
       border-radius: 12px;
       min-width: 250px;
+      cursor: pointer;
       .box-img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+      
 
         img {
           border-radius: 8px;
@@ -46,6 +48,7 @@ main {
       }
     }
   }
+  
   @media (max-width: 1440px) {
     margin: 150px 80px 120px 80px;
     

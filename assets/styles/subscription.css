@@ -41,6 +41,11 @@ body{
     background-color: #141414;
 }
 
+#border{
+    border: 1px solid #262626;
+    border-radius: 12px;
+}
+
 main{
     margin: 0 161px;
 
@@ -119,7 +124,7 @@ main{
 
     }
 
-    @media (max-width:390px) {
+    @media (max-width:575px) {
          margin: 0 15px;
         
 

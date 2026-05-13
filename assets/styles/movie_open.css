@@ -14,34 +14,33 @@ body {
   background-color: #1a1a1a;
 }
 section {
-  margin: 100px 161px 0 161px;
+  margin: 100px 161px 100px 161px;
 
-  
   .movie_open {
     gap: 30px;
-    .Seasons{
+    .Seasons {
       padding: 40px;
 
-      .Season{
+      .Season {
         padding: 24px 50px;
         border-radius: 12px;
-        button{
+        button {
           background-color: unset;
         }
-        .Seaason-box{
+        .Seaason-box {
           padding: 20px;
           border-radius: 8px;
           background-color: #141414;
-          .content{
-            .time{
+          .content {
+            .time {
               width: fit-content;
-              color:#999999;
-              background-color: #141414 ;
+              color: #999999;
+              background-color: #141414;
             }
           }
-          img{
-            width: 175px; 
-            height: 118px; 
+          img {
+            width: 175px;
+            height: 118px;
           }
         }
       }
@@ -54,6 +53,7 @@ section {
       margin-bottom: 30px;
       button {
         background-color: #141414 !important;
+        border: 1px solid #262626;
       }
     }
     .img-box {
@@ -94,12 +94,18 @@ section {
       .box-review {
         gap: 20px;
         .box {
-          padding: 40px;
+          padding: 40px !important;
+          button {
+            border: 1px solid #262626;
+            padding: 0 10px;
+            background-color: #141414;
+          }
         }
       }
       .buttons {
         button {
           background-color: #141414;
+          border: 1px solid #262626;
         }
         .move-point {
           gap: 6px;
@@ -177,62 +183,33 @@ section {
 @media (max-width: 575px) {
   section {
     margin: 0 15px;
-    .movie_open {
-      margin-top: 60px;
-      .description,
-      .cast,
-      .review {
-        padding: 24px;
-      }
 
-      .Seasons{
+  .movie_open {
+    gap: 30px;
+    .Seasons {
+      padding: 24px;
+
+      .Season {
         padding: 16px 20px;
-        
-      }
-
-      
-      .img-box {
-        gap: 10px;
-        overflow-x: auto;
-        padding-bottom: 30px;
-        scrollbar-color: #e50000;
-        img {
-          width: 75px;
-          height: 80px;
-        }
-      }
-      .img-box::-webkit-scrollbar {
-        height: 4px;
-      }
-
-      .img-box::-webkit-scrollbar-track {
-        background: #222;
-        border-radius: 20px;
-      }
-
-      .img-box::-webkit-scrollbar-thumb {
-        border-radius: 20px;
-
-        background: linear-gradient(90deg, #ff0000, #ff4d4d, #ff0000);
-
-        background-size: 100% 50%;
-
-        animation: moveColors 3s linear infinite;
-      }
-
-      /* animation */
-      @keyframes moveColors {
-        0% {
-          background-position: 0% 0%;
-        }
-
-        100% {
-          background-position: 200% 0%;
-        }
       }
     }
 
-    .content_left{
+    .description,
+    .cast,
+    .review {
+      padding: 24px;
+    }
+
+    .review {
+      .box-review {
+        .box {
+          padding: 24px !important;
+        }
+      }
+    }
+  }
+
+    .content_left {
       padding: 24px;
     }
   }
